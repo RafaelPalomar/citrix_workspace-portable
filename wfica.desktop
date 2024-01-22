@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=Citrix Workspace Engine (on citrix-workspace)
+StartupWMClass=Wfica
+NoDisplay=true
+MimeType=application/x-ica;
+Categories=Application;Network;X-Red-Hat-Base;X-SuSE-Core-Internet;
+Icon=/run/host/var/home/rafael/.local/share/icons/manager.png
+Exec="/opt/Citrix/ICAClient/wfica.sh %f"
