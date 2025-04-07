@@ -27,8 +27,8 @@ RUN cd /tmp && \
     curl -LO https:$(curl -L https://www.citrix.com/downloads/workspace-app/linux/workspace-app-for-linux-latest.html |grep icaclient|grep deb|grep amd64|awk -F 'rel="' '{print $2}' | awk -F '"' '{print $1}')
 
 RUN apt-get update && \
-    apt-get install -y /tmp/icaclient_23.11.0.82_amd64.deb && \
-    rm -rf /var/lib/apt/lists/* /tmp/icaclient_23.11.0.82_amd64.deb
+    apt-get install -y /tmp/icaclient_24.11.0.85_amd64.deb && \
+    rm -rf /var/lib/apt/lists/* /tmp/icaclient_24.11.0.85_amd64.deb
 
 COPY wfica.sh /opt/Citrix/ICAClient/
 RUN mkdir -p /home/citrix/.ICAClient && \
