@@ -71,7 +71,7 @@ jobs:
           password: ${{ secrets.QUAY_OAUTH_TOKEN }}
 
       # Sign container image
-      - uses: sigstore/cosign-installer@v3.8.1
+      - uses: sigstore/cosign-installer@v3.8.2
 
       - name: Sign container image
         if: github.event_name != 'pull_request'
